@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     title: 'tagma',
-    description: 'Monthly income and expenses, by category',
+    description: 'Income and expenses, kept in order',
+    icons: {icon: '/logo.svg'},
 };
 
 export default function RootLayout({children}: LayoutProps<'/'>) {

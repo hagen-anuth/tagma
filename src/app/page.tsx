@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {connection} from 'next/server';
 import {Suspense} from 'react';
 
@@ -109,12 +110,15 @@ function Shell({actions, children}: ShellProps): React.ReactElement {
         <div className="mx-auto flex max-w-[1400px] flex-col gap-5 px-4 py-6 sm:px-8 sm:py-10">
             <header className="flex h-8 items-center justify-between gap-4">
                 <div className="flex items-center gap-2">
-                    <span
-                        aria-hidden
-                        className="grid size-6 place-items-center rounded-md bg-primary text-[11px] font-bold text-primary-foreground"
-                    >
-                        #
-                    </span>
+                    <Image
+                        src="/logo.svg"
+                        alt=""
+                        width={26}
+                        height={26}
+                        unoptimized
+                        priority
+                        className="drop-shadow-[0_2px_3px_rgb(16_24_40/0.15)]"
+                    />
                     <span className="text-[13px] font-semibold tracking-tight">
                         tagma
                     </span>

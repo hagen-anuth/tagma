@@ -1,3 +1,8 @@
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.png">
+    <img alt="tagma: income and expenses, kept in order" src="docs/banner-light.png">
+</picture>
+
 # tagma
 
 A small, local tool for tracking personal income and expenses. You record each
