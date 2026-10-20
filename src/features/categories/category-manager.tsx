@@ -91,9 +91,7 @@ export function CategoryManager({
                 }}
             >
                 <DialogHeader>
-                    <DialogTitle className="text-[13px]">
-                        categories
-                    </DialogTitle>
+                    <DialogTitle className="text-base">categories</DialogTitle>
                     <DialogDescription className="text-xs">
                         Rename, reorder or switch a category between income and
                         expenses. A category can only be deleted once no entries
@@ -107,7 +105,7 @@ export function CategoryManager({
                         const ids = ofKind.map(c => c.id);
                         return (
                             <section key={kind} className="grid gap-1.5">
-                                <h3 className="px-2 text-[10px] font-medium tracking-[0.18em] text-muted-foreground uppercase">
+                                <h3 className="px-2 text-2xs font-medium tracking-[0.18em] text-muted-foreground uppercase">
                                     {SECTION_LABELS[kind]}
                                 </h3>
                                 <ul className="divide-y divide-border/60 rounded-lg border">
@@ -184,7 +182,7 @@ export function CategoryManager({
 
                 <p
                     role="alert"
-                    className="min-h-4 text-[11px] text-destructive empty:hidden"
+                    className="min-h-4 text-xs text-destructive empty:hidden"
                 >
                     {error}
                 </p>

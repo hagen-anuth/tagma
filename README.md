@@ -67,6 +67,12 @@ Drizzle Studio.
 | `yarn verify`            | typecheck, lint, test and build       |
 | `yarn db:up` / `db:down` | start / stop Postgres                 |
 
+## Design
+
+`DESIGN.md` holds the design rules: colour, type, shape, components and how
+money is formatted. `/styleguide` in the running app renders the live tokens
+and components in both themes, for visual review.
+
 ## Layout
 
 | Path                        | Contents                                                     |
@@ -76,10 +82,13 @@ Drizzle Studio.
 | `src/features/entries/`     | entry dialog, form, category combobox, month drawer, actions |
 | `src/features/categories/`  | category manager dialog, queries, actions, reordering        |
 | `src/features/preferences/` | currency/locale popover, query and action                    |
+| `src/features/styleguide/`  | token metadata and demos for `/styleguide`                   |
 | `src/lib/`                  | DB client and schema, money and date helpers                 |
 | `src/schemas/`              | Zod schemas and shared types                                 |
 | `src/components/ui/`        | shadcn primitives (generated; not hand-edited or linted)     |
 | `drizzle/`                  | SQL migrations; `0001_seed.sql` holds the default categories |
+| `public/logo.svg`           | the logo, also the favicon                                   |
+| `docs/`                     | README banners                                               |
 
 Reads happen in server components and writes go through server actions, which
 call `refresh()`. There is no client-side data cache.

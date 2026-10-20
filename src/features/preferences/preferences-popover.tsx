@@ -48,7 +48,7 @@ export function PreferencesPopover({
             </PopoverTrigger>
             <PopoverContent align="end" className="grid w-64 gap-3 text-xs">
                 <div className="grid gap-1.5">
-                    <Label className="text-[11px] tracking-wider text-muted-foreground uppercase">
+                    <Label className="text-xs tracking-wider text-muted-foreground uppercase">
                         currency
                     </Label>
                     <Select
@@ -71,7 +71,7 @@ export function PreferencesPopover({
                     </Select>
                 </div>
                 <div className="grid gap-1.5">
-                    <Label className="text-[11px] tracking-wider text-muted-foreground uppercase">
+                    <Label className="text-xs tracking-wider text-muted-foreground uppercase">
                         number &amp; date format
                     </Label>
                     <Select
@@ -96,7 +96,7 @@ export function PreferencesPopover({
                 <p className="text-muted-foreground">
                     e.g. {formatMoney(SAMPLE_CENTS, preferences)}
                 </p>
-                <p className="text-[11px] text-muted-foreground">
+                <p className="text-xs text-muted-foreground">
                     Changing the currency relabels amounts; it does not convert
                     them.
                 </p>

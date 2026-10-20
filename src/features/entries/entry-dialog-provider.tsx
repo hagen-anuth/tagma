@@ -134,7 +134,7 @@ export function EntryDialogProvider({
                     }}
                 >
                     <DialogHeader>
-                        <DialogTitle className="text-[13px]">
+                        <DialogTitle className="text-base">
                             {state.entryId === null
                                 ? 'new entry'
                                 : 'edit entry'}

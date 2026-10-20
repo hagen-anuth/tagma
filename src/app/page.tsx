@@ -119,7 +119,7 @@ function Shell({actions, children}: ShellProps): React.ReactElement {
                         priority
                         className="drop-shadow-[0_2px_3px_rgb(16_24_40/0.15)]"
                     />
-                    <span className="text-[13px] font-semibold tracking-tight">
+                    <span className="text-base font-semibold tracking-tight">
                         tagma
                     </span>
                 </div>
@@ -132,7 +132,7 @@ function Shell({actions, children}: ShellProps): React.ReactElement {
                     </div>
                 )}
             </main>
-            <footer className="text-center text-[11px] text-muted-foreground">
+            <footer className="text-center text-xs text-muted-foreground">
                 click a month or cell to see its entries
             </footer>
         </div>

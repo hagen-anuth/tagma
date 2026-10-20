@@ -8,6 +8,18 @@
     --font-sans: var(--font-geist-mono);
     --font-mono: var(--font-geist-mono);
     --font-heading: var(--font-geist-mono);
+    /*
+     * The type scale, in px: the root is 13px, so Tailwind's rem steps would
+     * land off-scale. Standard names, so cn() still sees them as font sizes.
+     */
+    --text-2xs: 10px;
+    --text-2xs--line-height: 1.5;
+    --text-xs: 11px;
+    --text-xs--line-height: 1.5;
+    --text-sm: 12px;
+    --text-sm--line-height: 1.5;
+    --text-base: 13px;
+    --text-base--line-height: 1.5;
     --color-ring: var(--ring);
     --color-input: var(--input);
     --color-border: var(--border);
@@ -38,7 +50,8 @@
     --shadow-float: var(--float-shadow);
 }
 
-:root {
+:root,
+.light {
     --workbench: #eef1f5;
     --pg-dot: #c3cad5;
     --background: oklch(0.99 0.002 250);

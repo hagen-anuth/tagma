@@ -72,7 +72,7 @@ export function CategoryRow({
             <span className="min-w-0 flex-1 truncate">{category.name}</span>
             <span
                 className={cn(
-                    'shrink-0 text-[11px] text-muted-foreground tabular-nums',
+                    'shrink-0 text-xs text-muted-foreground tabular-nums',
                     !isInUse && 'opacity-60',
                 )}
             >
@@ -205,7 +205,7 @@ function CategoryEditor({
                     </Button>
                 </div>
                 {kind !== category.kind && entryCount > 0 && (
-                    <p className="text-[11px] text-muted-foreground">
+                    <p className="text-xs text-muted-foreground">
                         Its {formatCount(entryCount)} will count as {kind}.
                     </p>
                 )}

@@ -12,7 +12,7 @@ export function NewEntryButton(): React.ReactElement {
         <Button size="sm" onClick={() => openNew()}>
             <PlusIcon />
             new entry
-            <kbd className="ml-1 hidden rounded sm:inline border border-primary-foreground/25 px-1 text-[10px] leading-4 opacity-70">
+            <kbd className="ml-1 hidden rounded sm:inline border border-primary-foreground/25 px-1 text-2xs leading-4 opacity-70">
                 N
             </kbd>
         </Button>

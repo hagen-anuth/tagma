@@ -83,15 +83,10 @@ interface StatProps {
 function Stat({label, className, children}: StatProps): React.ReactElement {
     return (
         <div className="flex flex-col gap-0.5 sm:items-end">
-            <dt className="text-[10px] tracking-[0.18em] text-muted-foreground uppercase">
+            <dt className="text-2xs tracking-[0.18em] text-muted-foreground uppercase">
                 {label}
             </dt>
-            <dd
-                className={cn(
-                    'text-[13px] font-medium tabular-nums',
-                    className,
-                )}
-            >
+            <dd className={cn('text-base font-medium tabular-nums', className)}>
                 {children}
             </dd>
         </div>

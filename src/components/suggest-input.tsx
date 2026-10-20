@@ -158,7 +158,7 @@ export function SuggestInput({
                     >
                         <span className="truncate">{option.value}</span>
                         {option.meta && (
-                            <span className="shrink-0 text-[11px] text-muted-foreground tabular-nums">
+                            <span className="shrink-0 text-xs text-muted-foreground tabular-nums">
                                 {option.meta}
                             </span>
                         )}

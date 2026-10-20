@@ -39,9 +39,9 @@ export function YearSheetTable({
 
     return (
         <div className="overflow-x-auto">
-            <table className="w-full min-w-[1080px] table-fixed border-collapse text-[12px] tabular-nums">
+            <table className="w-full min-w-[1080px] table-fixed border-collapse text-sm tabular-nums">
                 <thead>
-                    <tr className="border-b text-[11px] text-muted-foreground uppercase">
+                    <tr className="border-b text-xs text-muted-foreground uppercase">
                         <th className="sticky left-0 z-10 w-40 bg-card px-4 py-2.5 text-left font-medium tracking-wider">
                             {preferences.currency}
                         </th>
@@ -126,7 +126,7 @@ function SectionHeading({label}: {label: string}): React.ReactElement {
         <tr>
             <th
                 colSpan={14}
-                className="sticky left-0 bg-card px-4 pt-4 pb-1.5 text-left text-[10px] font-medium tracking-[0.18em] text-muted-foreground uppercase"
+                className="sticky left-0 bg-card px-4 pt-4 pb-1.5 text-left text-2xs font-medium tracking-[0.18em] text-muted-foreground uppercase"
             >
                 {label}
             </th>
@@ -202,10 +202,10 @@ function TotalRow({
     isSigned = false,
 }: TotalRowProps): React.ReactElement {
     return (
-        <tr className={cn(isSigned && 'border-t text-[13px]')}>
+        <tr className={cn(isSigned && 'border-t text-base')}>
             <th
                 scope="row"
-                className="sticky left-0 z-10 bg-card px-4 py-2 text-left text-[11px] font-medium tracking-wider text-muted-foreground uppercase"
+                className="sticky left-0 z-10 bg-card px-4 py-2 text-left text-xs font-medium tracking-wider text-muted-foreground uppercase"
             >
                 {label}
             </th>

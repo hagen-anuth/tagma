@@ -337,21 +337,21 @@ function Field({
         <div className="grid gap-1.5">
             <Label
                 htmlFor={htmlFor}
-                className="text-[11px] tracking-wider text-muted-foreground uppercase"
+                className="text-xs tracking-wider text-muted-foreground uppercase"
             >
                 {label}
             </Label>
             {children}
             <p
                 className={cn(
-                    'min-h-0 text-[11px] text-destructive',
+                    'min-h-0 text-xs text-destructive',
                     !error && 'hidden',
                 )}
             >
                 {error}
             </p>
             {hint && !error && (
-                <p className="text-[11px] text-muted-foreground">{hint}</p>
+                <p className="text-xs text-muted-foreground">{hint}</p>
             )}
         </div>
     );

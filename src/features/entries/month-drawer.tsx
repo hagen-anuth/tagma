@@ -63,7 +63,7 @@ export function MonthDrawer({
         >
             <SheetContent className="w-full gap-0 sm:max-w-md">
                 <SheetHeader className="border-b">
-                    <SheetTitle className="text-[13px]">
+                    <SheetTitle className="text-base">
                         {monthName} {year}
                     </SheetTitle>
                     <SheetDescription className="text-xs">
@@ -110,7 +110,7 @@ export function MonthDrawer({
                                             <span className="block truncate">
                                                 {entry.name}
                                             </span>
-                                            <span className="block truncate text-[11px] text-muted-foreground">
+                                            <span className="block truncate text-xs text-muted-foreground">
                                                 {entry.categoryName}
                                             </span>
                                         </span>
@@ -185,7 +185,7 @@ interface TotalProps {
 function Total({label, value, className}: TotalProps): React.ReactElement {
     return (
         <div>
-            <dt className="text-[10px] tracking-[0.18em] text-muted-foreground uppercase">
+            <dt className="text-2xs tracking-[0.18em] text-muted-foreground uppercase">
                 {label}
             </dt>
             <dd className={cn('font-medium tabular-nums', className)}>
