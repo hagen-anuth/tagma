@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import {connection} from 'next/server';
 import {Suspense} from 'react';
 
+import {LogoMark} from '@/components/logo-mark';
 import {ThemeToggle} from '@/components/theme-toggle';
 import {CategoryManager} from '@/features/categories/category-manager';
 import {
@@ -110,15 +110,7 @@ function Shell({actions, children}: ShellProps): React.ReactElement {
         <div className="mx-auto flex max-w-[1400px] flex-col gap-5 px-4 py-6 sm:px-8 sm:py-10">
             <header className="flex h-8 items-center justify-between gap-4">
                 <div className="flex items-center gap-2">
-                    <Image
-                        src="/logo.svg"
-                        alt=""
-                        width={26}
-                        height={26}
-                        unoptimized
-                        priority
-                        className="drop-shadow-[0_2px_3px_rgb(16_24_40/0.15)]"
-                    />
+                    <LogoMark />
                     <span className="text-base font-semibold tracking-tight">
                         tagma
                     </span>

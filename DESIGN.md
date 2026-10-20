@@ -110,6 +110,8 @@ Format money only through `src/lib/money.ts` and dates only through
 - **Logo:** `public/logo.svg`, a carved-marble meander. It serves as the
   favicon and the header mark. Use it as it is: don't recolour it, crop it or
   put it on a coloured tile. Minimum size is 16px.
+- **Easter egg:** the header logo (`LogoMark`) grows and wiggles on hover.
+  It is the only playful motion in the app; keep it that way.
 - **Name:** always lowercase, `tagma`.
 - **Tagline:** "income and expenses, kept in order".
 - **README banners:** `docs/banner-*.png` are rendered images. Re-render

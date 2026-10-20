@@ -4,6 +4,7 @@ import Link from 'next/link';
 import {formatAmount, formatMoney} from '@/lib/money';
 import {cn} from '@/lib/utils';
 
+import {LogoMark} from '@/components/logo-mark';
 import {ThemeToggle} from '@/components/theme-toggle';
 import {buildYearSheet} from '@/features/sheet/build-year-sheet';
 import {SheetHeader} from '@/features/sheet/sheet-header';
@@ -50,14 +51,7 @@ export default function StyleguidePage(): React.ReactElement {
         <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-4 py-6 sm:px-8 sm:py-10">
             <header className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-2">
-                    <Image
-                        src="/logo.svg"
-                        alt=""
-                        width={26}
-                        height={26}
-                        unoptimized
-                        className="drop-shadow-[0_2px_3px_rgb(16_24_40/0.15)]"
-                    />
+                    <LogoMark />
                     <span className="text-base font-semibold tracking-tight">
                         tagma
                     </span>

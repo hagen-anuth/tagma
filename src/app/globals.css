@@ -50,6 +50,30 @@
     --shadow-float: var(--float-shadow);
 }
 
+@theme {
+    /* animates `rotate`, not `transform`, so it composes with scale-* */
+    --animate-wiggle: wiggle 0.6s ease-in-out;
+
+    @keyframes wiggle {
+        0%,
+        100% {
+            rotate: 0deg;
+        }
+        20% {
+            rotate: -9deg;
+        }
+        40% {
+            rotate: 7deg;
+        }
+        60% {
+            rotate: -4deg;
+        }
+        80% {
+            rotate: 2deg;
+        }
+    }
+}
+
 :root,
 .light {
     --workbench: #eef1f5;
