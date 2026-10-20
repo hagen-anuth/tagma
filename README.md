@@ -10,6 +10,27 @@ entry with a category, and the main view is a year sheet: categories down the
 side, months across the top, and totals for income, spending and net at the
 bottom.
 
+## Why tagma
+
+_Tagma_ (τάγμα) is Ancient Greek for "order". The idea is to put order into
+your finances, a month at a time.
+
+- **Your whole year on one sheet.** Every category for every month, with
+  income, spending and net totals at the bottom.
+- **Fast entry.** Press `N`, pick a category, choose a name from your earlier
+  entries, and save.
+- **Consistent names.** Names you've used before are suggested, and spelling
+  variants are matched to the existing name, so "Health insurance" and
+  "health insurance" don't end up as separate entries.
+- **Categories your way.** Add, rename, reorder or move categories between
+  income and expenses at any time.
+- **Your data stays local.** It's stored in a Postgres database on your own
+  machine. No account and no cloud.
+- **Your currency, your format.** EUR with German formatting by default; you
+  can switch currency and number format.
+- **Calm by design.** A quiet, monospace ledger in light and dark mode, where
+  colour is used only for meaning.
+
 ## Quickstart
 
 Needs Node 22, Docker, and any `yarn` on the PATH. The Yarn release is
