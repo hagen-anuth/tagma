@@ -83,6 +83,9 @@ text-muted-foreground`.
 - **Primitives** are shadcn components in `src/components/ui`. They are
   generated, so don't edit them. Restyle them through `className` at the call
   site, or add a wrapper in `src/components`.
+    - **Exception:** `button.tsx` adds `cursor-pointer` to its base styles, so
+      every button shows the pointer. Re-apply it whenever the button is
+      regenerated.
 - **Choosing a surface:**
     - a dialog for a focused task (one form, one decision);
     - the sheet (the drawer that slides in from the right) for browsing next to
