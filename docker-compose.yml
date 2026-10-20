@@ -1,0 +1,22 @@
+services:
+    db:
+        image: postgres:18-alpine
+        restart: unless-stopped
+        environment:
+            POSTGRES_USER: tagma
+            POSTGRES_PASSWORD: tagma
+            POSTGRES_DB: tagma
+        ports:
+            # 5442 on the host, so it does not collide with another local Postgres
+            - '127.0.0.1:5442:5432'
+        volumes:
+            # Postgres 18 images keep PGDATA in a versioned subdirectory of this path
+            - tagma-pg:/var/lib/postgresql
+        healthcheck:
+            test: ['CMD-SHELL', 'pg_isready -U tagma -d tagma']
+            interval: 5s
+            timeout: 3s
+            retries: 10
+
+volumes:
+    tagma-pg:
